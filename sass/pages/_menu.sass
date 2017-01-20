@@ -1,0 +1,19 @@
+
+.menu
+	display: table
+	ul 
+		li
+			+transition(.1s)
+			&:hover
+				border-bottom: solid 2px $branco
+				padding-bottom: 10px
+			a 
+				color: $branco
+				text-decoration: none
+	+breakpoint($tablet)
+		display: none
+
+
+
+
+			
