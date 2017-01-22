@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	font-family: 'dolphin';
 }
 
 @font-face {
@@ -33,7 +34,9 @@ ul{
 	float: left;
 	list-style: none;
 }
-
+ul li a {
+	font-size: 18px
+}
 ul li{
 	float: left;
 	margin: 10px;

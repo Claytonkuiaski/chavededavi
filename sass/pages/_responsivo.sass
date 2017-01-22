@@ -1,16 +1,43 @@
 header
-	+breakpoint($tablet)
-		position: absolute
+	.logo-responsivo
+		img 
+			display: none
+			+breakpoint($tablet)
+				display: block
+				padding: 0px
+				width: 150px
+				margin: 0px
+				margin-top: -80px
+				float: right
+			+breakpoint($celubot)
+				width: 80px
+			+breakpoint($celular)
+				margin-top: -65px	
 	.titulo
-		color: $branco
-		font-family: 'dolphin';
-		font-size: 60px
-		margin-top: 10px
-		margin-left: 35%
-		white-space: nowrap
-		+breakpoint($celular)
-			margin-left: 20%
+		h1 
+			display: none
+			color: $branco
 			font-size: 50px
+			text-align: center
+			margin: 0px
+			white-space: nowrap
+			+breakpoint($tablet)
+				display: block
+			+breakpoint($celular)
+				font-size: 30px
+				margin-top: 20px
+		h3
+			display: none
+			color: $branco
+			font-size: 30px
+			text-align: center	
+			margin: 0px
+			white-space: nowrap	
+			+breakpoint($tablet)
+				display: block
+			+breakpoint($celular)
+				font-size: 20px	
+
 	width: 100%
 	background-color: $azul-claro
 	#btn-menu
@@ -20,7 +47,7 @@ header
 		padding-top: 0px
 		color: $branco
 		font-size: 40px
-		margin-top: -75px
+		margin-top: -65px
 		margin-left: 25px
 		width: 40px
 		height: 45px
@@ -29,8 +56,8 @@ header
 			cursor: pointer
 		+breakpoint($tablet)
 			display: block
-			+breakpoint($celular)
-				margin-top: -61px
+		+breakpoint($celular)
+			margin-top: -50px
 	.responsivo
 		ul 
 			list-style: none
@@ -39,8 +66,10 @@ header
 			+breakpoint($tablet)
 				display: flex 
 				flex-direction: column
-				margin-top: 30px
-				margin-left: -590px
+				margin-top: 12px
+				margin-left: -520px
+			+breakpoint($celular)
+				margin-top: 25px	
 			li 
 				margin: 0px
 				border-top: solid 1px $branco
@@ -48,14 +77,15 @@ header
 				&:hover
 					background-color: $azul-escuro
 				a 
-					padding: 20px
+					padding: 9px
 					padding-right: 300px
 					padding-left: 40px
 					display: block
 					color: $branco	
 					text-decoration: none
-					font-size: 50px
-					font-family: 'dolphin';
+					font-size: 35px
+					+breakpoint($celubot)
+						padding-right: 100px
 		+breakpoint($tablet)
 			position: relative
 			z-index: 5
@@ -72,6 +102,6 @@ header
 		.abrir
 			display: none	
 		.responsivo
-			margin-left: 590px	
+			margin-left: 520px	
 		.video	
 
