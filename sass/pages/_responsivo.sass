@@ -18,7 +18,7 @@ header
 		padding-top: 0px
 		color: $branco
 		font-size: 40px
-		margin-top: -61px
+		margin-top: -75px
 		margin-left: 25px
 		width: 40px
 		height: 45px
@@ -27,6 +27,8 @@ header
 			cursor: pointer
 		+breakpoint($tablet)
 			display: block
+			+breakpoint($celular)
+				margin-top: -61px
 	.responsivo
 		ul 
 			list-style: none
@@ -45,11 +47,13 @@ header
 					background-color: $azul-escuro
 				a 
 					padding: 20px
-					padding-right: 80px
+					padding-right: 30px
+					padding-left: 15px
 					display: block
 					color: $branco	
 					text-decoration: none
-					font-size: 20px
+					font-size: 30px
+					font-family: 'dolphin';
 		+breakpoint($tablet)
 			position: relative
 			z-index: 5
