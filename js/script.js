@@ -28,3 +28,25 @@ $(document).ready(function(){
 	});
 
 });
+
+$(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+ 
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 100,
+      paginationSpeed : 300,
+      singleItem:true,
+      autoPlay: true
+      
+ 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : true,
+      // itemsDesktopSmall : true,
+      // itemsTablet: true,
+      // itemsMobile : true
+ 
+  });
+ 
+});
