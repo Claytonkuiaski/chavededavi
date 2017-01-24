@@ -37,7 +37,8 @@ $(document).ready(function() {
       slideSpeed : 100,
       paginationSpeed : 300,
       singleItem:true,
-      autoPlay: true
+      autoPlay: true,
+      pagination: false
       
  
       // "singleItem:true" is a shortcut for:
